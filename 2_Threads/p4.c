@@ -2,7 +2,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>//malloc()
-#include <pthread.h>
+#include <unistd.h>//sleep()
+#include <pthread.h>//threads
 
 struct ThreadData {
     int localVariable;
@@ -23,6 +24,7 @@ int main() {
     for (i = 0; i < n; i++) {
         threadData[i].localVariable = i;
         pthread_create(&tid[i], NULL, myThread, (void *)&threadData[i]); 
+        sleep(1);
     }
     printf("All threads created\n");
     for (i = 0; i < n; i++)
