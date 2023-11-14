@@ -1,7 +1,7 @@
 //7. Write a program in C, that creates an zombie, and displays its PID and PPID. Verify the PID, PPID values of the zombie process, from the system, using “ps” command. Also show how to eradicate zombies.
 
 #include<stdio.h>
-#include<unistd.h>//fork()
+#include <unistd.h>//getpid(), getppid(), fork()
 #include<sys/wait.h>
 
 void main(){

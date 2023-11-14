@@ -2,9 +2,9 @@
 
 #include<stdio.h>
 #include<stdlib.h>//exit()
-#include<unistd.h>//exec()
-#include<sys/wait.h>
-#include<sys/types.h>
+#include <unistd.h>//getpid(), getppid(), exec()
+#include<sys/wait.h>//wait()
+#include<sys/types.h>//pid_t
 
 void main(){
     printf("I am the main process\n");

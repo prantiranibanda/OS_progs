@@ -1,7 +1,7 @@
 //1. Write a program in C, that creates a child process using fork(), and also displays the child PID, and its own PID, using getpid() and getppid().
 
 #include <stdio.h>
-#include <unistd.h>
+#include <unistd.h>//getppid(), getpid(), fork()
 #include <sys/wait.h>
 
 void main(){
