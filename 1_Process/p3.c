@@ -1,9 +1,9 @@
 //3. Write a program to create multiple children from a process and print their respective PID’s. Also print the PPID and ensure that they are generated from the same parent.
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <sys/wait.h>
+#include <stdlib.h>//exit()
+#include <unistd.h>//getpid(), getppid()
+#include <sys/wait.h>//wait()
 
 void main(){
     int f;

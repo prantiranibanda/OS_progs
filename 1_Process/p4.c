@@ -3,8 +3,8 @@
 #include<stdio.h>
 #include<stdlib.h>//exit()
 #include<unistd.h>//fork()
-#include<sys/wait.h>
-#include<sys/types.h>
+#include<sys/wait.h>//wait()
+#include<sys/types.h>//pid_t
 
 void main(){
     int i, status;

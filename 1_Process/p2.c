@@ -1,8 +1,8 @@
 //2. Write a program in C, that creates a child and assigns a job of decreasing a variable while it itself increases the value.
 
 #include <stdio.h>
-#include <unistd.h>
-#include <sys/wait.h>
+#include <unistd.h>//fork()
+#include <sys/wait.h>//wait()
 
 void main(){
     int var = 5;

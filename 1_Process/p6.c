@@ -1,8 +1,8 @@
 //6. Write a program in C, that creates an orphan, and displays its PID and PPID. Verify the PID, PPID values of the orphan process, from the system, using “ps” command.
 
 #include<stdio.h>
-#include<unistd.h>//fork()
-#include<sys/wait.h>
+#include <unistd.h>//getpid(), getppid(), fork()
+#include<sys/wait.h>//wait()
 
 void main(){
     if(fork()==0){//child process
