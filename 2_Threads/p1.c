@@ -1,3 +1,5 @@
+//1. Write a program in C, that creates a thread that prints from (0-10) whereas the main program prints from (20-30)
+
 #include <stdio.h>
 #include <pthread.h>
 

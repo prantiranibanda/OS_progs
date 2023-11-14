@@ -1,3 +1,5 @@
+//2. Write a program to print process ID and two threads that print their respective thread ID’s.
+
 #include <stdio.h>
 #include <unistd.h>//getpid()
 #include <pthread.h>

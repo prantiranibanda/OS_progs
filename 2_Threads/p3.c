@@ -1,5 +1,7 @@
+//3. Write a program where a thread adds and prints two numbers, provided to it by main. Also ensure that the thread returns the sum to the main for printing.
+
 #include <stdio.h>
-#include <stdlib.h>//malloc()
+#include <stdlib.h> //malloc()
 #include <pthread.h>
 
 void *add(void *args){
@@ -10,10 +12,10 @@ void *add(void *args){
 }
 
 void main(){
-    int nums[2] = {1001 + 1055};
+    int nums[2] = {30, 25};
     void * res;
     pthread_t tid;
     pthread_create(&tid, NULL, add, (void*)nums);
     pthread_join(tid, &res);
-    printf("The sum of 1001 and 1055 is: %d\n", (int *)res);
+    printf("The sum of 30 and 25 is: %d\n", (int *)res);
 }
